@@ -1,4 +1,4 @@
-# Python
+# Study Python
 存放一些自己学习Python写的小代码
 
 ### HydtSpider
