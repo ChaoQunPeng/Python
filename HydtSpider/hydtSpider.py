@@ -7,34 +7,34 @@ import emailSender
 
 urls = [
     # 龙岩地区
-        "http://www.zpsfdc.com/",      # 漳平
-        "http://www.fjlyfdc.com.cn/",  # 龙岩
-        "http://www.wpxfdc.com.cn/",    # 武平
+        "http://www.zpsfdc111.com/",      # 漳平
+        # "http://www.fjlyfdc.com.cn/",  # 龙岩
+        # "http://www.wpxfdc.com.cn/",    # 武平
 
-        # 南平地区
-        "http://222.78.249.228:81/",    # 顺昌
-        "http://www.wysfgc.com/",       # 武夷山
-        "http://www.gzxfcgls.com/",     # 光泽
-        "http://www.pcfgs.com/",        # 浦城
-        "http://www.jofwdj.com/",       # 建瓯
-        "http://www.jyfdc.com/",        # 建阳
+        # # 南平地区
+        # "http://222.78.249.228:81/",    # 顺昌
+        # "http://www.wysfgc.com/",       # 武夷山
+        # "http://www.gzxfcgls.com/",     # 光泽
+        # "http://www.pcfgs.com/",        # 浦城
+        # "http://www.jofwdj.com/",       # 建瓯
+        # "http://www.jyfdc.com/",        # 建阳
 
-        # 宁德地区
-        "http://www.fafgj.com/Content/xw_hydt",        # 福安
-        "http://www.fdfdc.cn/",         # 福鼎
+        # # 宁德地区
+        # "http://www.fafgj.com/Content/xw_hydt",        # 福安
+        # "http://www.fdfdc.cn/",         # 福鼎
 
-        # 莆田地区
-        "http://www.fjxyfdc.com/",      # 仙游
+        # # 莆田地区
+        # "http://www.fjxyfdc.com/",      # 仙游
 
-        # # 泉州地区
-        "http://www.nafdc.com.cn/?COLLCC=2688041923&",  # 南安
+        # # # 泉州地区
+        # "http://www.nafdc.com.cn/?COLLCC=2688041923&",  # 南安
 
-        # 三明地区
+        # # 三明地区
 
-        "http://www.dtfgs.com/",        # 大田
-        "http://www.fjsxfdc.com/",      # 沙县
-        # "http://www.nhfdc.com.cn/",     # 宁化
-        "http://218.86.116.222/"        # 尤溪
+        # "http://www.dtfgs.com/",        # 大田
+        # "http://www.fjsxfdc.com/",      # 沙县
+        # # "http://www.nhfdc.com.cn/",     # 宁化
+        # "http://218.86.116.222/"        # 尤溪
 ]
  
 
@@ -82,12 +82,12 @@ class HydtSpider():
         emailSenderClient.sendEmail(toSendEmailLst, subject, body)
 
     def save_text(self):
-        with open('./log/'+ self.current_date + '.txt', 'a',encoding='utf8') as f: # 这里要加上 encoding='utf8' 不然写入文件后中文会乱码
+        with open('D:/HydtLog/'+ self.current_date + '.txt', 'a',encoding='utf8') as f: # 这里要加上 encoding='utf8' 不然写入文件后中文会乱码
             f.write(self.segme.join(self.result))
 
 hydt_spider = HydtSpider()
 hydt_spider.crawl()
-hydt_spider.sendEmailFun()
+# hydt_spider.sendEmailFun()
 hydt_spider.save_text()
 
 # 弹窗
