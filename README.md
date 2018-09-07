@@ -1,5 +1,5 @@
 # Python
-存放的一些学习Python写的小代码
+存放一些自己学习Python写的小代码
 
 ### HydtSpider
 检查网站行业动态的一个小脚本
