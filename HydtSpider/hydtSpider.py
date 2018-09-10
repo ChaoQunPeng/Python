@@ -14,7 +14,7 @@ urls = [
         # 南平地区
         "http://222.78.249.228:81/",    # 顺昌
         "http://www.wysfgc.com/",       # 武夷山
-        "http://www.gzxfcgls.com/",     # 光泽
+        "http://222.78.251.53/?tdsourcetag=s_pctim_aiomsg",     # 光泽
         "http://www.pcfgs.com/",        # 浦城
         "http://www.jofwdj.com/",       # 建瓯
         "http://www.jyfdc.com/",        # 建阳
@@ -87,7 +87,7 @@ class HydtSpider():
 
 hydt_spider = HydtSpider()
 hydt_spider.crawl()
-# hydt_spider.sendEmailFun()
+hydt_spider.sendEmailFun()
 hydt_spider.save_text()
 
 # 弹窗
