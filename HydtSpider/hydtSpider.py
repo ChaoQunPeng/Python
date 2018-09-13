@@ -7,7 +7,7 @@ import emailSender
 
 urls = [
     # 龙岩地区
-        "http://www.zpsfdc.com/",      # 漳平
+        # "http://www.zpsfdc.com/",      # 漳平
         "http://www.fjlyfdc.com.cn/",  # 龙岩
         "http://www.wpxfdc.com.cn/",    # 武平
 
@@ -21,7 +21,7 @@ urls = [
 
         # 宁德地区
         "http://www.fafgj.com/Content/xw_hydt",        # 福安
-        "http://www.fdfdc.cn/",         # 福鼎
+        # "http://www.fdfdc.cn/",         # 福鼎
 
         # 莆田地区
         "http://www.fjxyfdc.com/",      # 仙游
