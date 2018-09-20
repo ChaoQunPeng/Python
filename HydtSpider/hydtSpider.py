@@ -27,7 +27,7 @@ urls = [
         "http://www.fjxyfdc.com/",      # 仙游
 
         # # 泉州地区
-        "http://www.nafdc.com.cn/?COLLCC=2688041923&",  # 南安
+        # "http://www.nafdc.com.cn/?COLLCC=2688041923&",  # 南安
 
         # 三明地区
 
